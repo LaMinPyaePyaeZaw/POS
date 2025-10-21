@@ -2,7 +2,7 @@
 services:
   - type: web
     name: laravel-app
-    env: php
+    runtime: docker
     buildCommand: |
       composer install --optimize-autoloader --no-dev
       php artisan migrate --force
